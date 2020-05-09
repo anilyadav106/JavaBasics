@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "<a class="vglnk" href="http://testng.org/testng-1.0.dtd" rel="nofollow"><span>http</span><span>://</span><span>testng</span><span>.</span><span>org</span><span>/</span><span>testng</span><span>-</span><span>1</span><span>.</span><span>0</span><span>.</span><span>dtd</span></a>" >
+<suite name="fulltests">
+  
+    <test name="front-end">
+        <classes>
+            <class name="com.websystique.testng.TestUI" />
+        </classes>
+    </test>
+  
+    <test name="back-end">
+        <classes>
+            <class name="com.websystique.testng.TestSecurity" />
+            <class name="com.websystique.testng.TestDataBase" />
+            <class name="com.websystique.testng.TestBackendConfig" />
+        </classes>
+    </test>
+ 
+</suite>
+
+
+----------------------
+<test> --an element having name as attributes...
+<test> element have further nested elements like classes, class
+There are 2 <test> in this suite i.e we have 1 suite with 2 tests.
+ First test have 1 class and can have multiple @Test annotated methods
+ Second test have 3 classes and can have multiple @Test annotated methods
+  
+So @BeforeSuite method will execute once before any <test> i.e before both the tests
+and then @AfterSuite method will execute once after all the <test> i.e last @Test method is run in back-end test.
+
+So @BeforeTest method will execute once before front-end test i.e before any @Test method in TestUI class
+and then @AfterTest method will execute once after front-end test i.e after all the @Test methods  in TestUI class
+
+
+so flow is:  STCM and then @Test
+ 
+BeforeSuite
+BeforeTest
+BeforeClass
+BeforeMethod
+Test
+AfterMethod
+AfterClass
+AfterTest
+AfterSuite
+
+============================maven surefire plugin=============
+
+<plugins>
+    [...]
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M4</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    [...]
+</plugins>
+
+
+if using this in POM, this configuration will override the includes and excludes patterns and run all tests in the suite files.
+So now calling maven test will reead this file and means testng.xml file but will run all tests.
+
+
+=================================================order of tests run in testng.xml=============================
+
+By default, TestNG will run your tests in the order they are found in the XML file. If you want the classes and methods listed in this file to 
+be run in an unpredictable order, set the preserve-order attribute to false
+
+view sourceprint?
+<test name="Regression1" preserve-order="false">
+  <classes>
+ 
+    <class name="test.Test1">
+      <methods>
+        <include name="m1" />
+        <include name="m2" />
+      </methods>
+    </class>
+ 
+    <class name="test.Test2" />
+ 
+  </classes>
+</test>
