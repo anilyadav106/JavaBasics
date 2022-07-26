@@ -8,7 +8,7 @@ public class forcefullySkipTest {
 	@Test
 
 	void skipTest() {
-		if (1 == 2) {
+		if (1 == 1) {
 			throw new SkipException("Skipping the test as condition is not met");
 		} else {
 

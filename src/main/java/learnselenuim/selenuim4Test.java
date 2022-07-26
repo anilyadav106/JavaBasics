@@ -11,7 +11,7 @@ public class selenuim4Test {
 
 		String driverPath = System.getProperty("user.dir");
 
-		System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/drivers/chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 

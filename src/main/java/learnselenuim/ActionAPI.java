@@ -1,5 +1,7 @@
 package learnselenuim;
 
+import java.util.Collections;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,9 +23,12 @@ public class ActionAPI {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://www.flipkart.com/");
-
+		driver.findElement(By.xpath("sdsd")).getCssValue("font-colour"); 
+		
+		driver.getWindowHandles();	
 		if (driver.findElement(By.xpath("//button[@class='_2AkmmA _29YdH8']")).isDisplayed())
-
+ 
+		
 		{
 
 			driver.findElement(By.xpath("//button[@class='_2AkmmA _29YdH8']")).click();

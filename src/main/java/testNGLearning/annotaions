@@ -22,25 +22,36 @@
 ----------------------
 <test> --an element having name as attributes...
 <test> element have further nested elements like classes, class
+
 There are 2 <test> in this suite i.e we have 1 suite with 2 tests.
+
  First test have 1 class and can have multiple @Test annotated methods
  Second test have 3 classes and can have multiple @Test annotated methods
-  
+  ---testng suite file level control
 So @BeforeSuite method will execute once before any <test> i.e before both the tests
 and then @AfterSuite method will execute once after all the <test> i.e last @Test method is run in back-end test.
 
 So @BeforeTest method will execute once before front-end test i.e before any @Test method in TestUI class
 and then @AfterTest method will execute once after front-end test i.e after all the @Test methods  in TestUI class
 
+ Now   @BeforeTest method will execute once before Be-end test i.e before any @Test method in TestSecurity class
+and then @AfterTest method will execute once after BE-end test i.e after all the @Test methods  in TestBackendConfig class
+ 
+----testng file level control ends
 
-so flow is:  STCM and then @Test
+Now, flow enters the class which has annoated test methods. So we can run any test on class level before executing
+any test method.
+
+so flow is:  STCM and then @Test, This is same maintained in testng.xml file.
  
 BeforeSuite
 BeforeTest
 BeforeClass
+
 BeforeMethod
 Test
 AfterMethod
+
 AfterClass
 AfterTest
 AfterSuite
@@ -64,7 +75,7 @@ AfterSuite
 
 
 if using this in POM, this configuration will override the includes and excludes patterns and run all tests in the suite files.
-So now calling maven test will reead this file and means testng.xml file but will run all tests.
+So now calling maven test will read this file and means testng.xml file but will run all tests.
 
 
 =================================================order of tests run in testng.xml=============================
@@ -74,16 +85,14 @@ be run in an unpredictable order, set the preserve-order attribute to false
 
 view sourceprint?
 <test name="Regression1" preserve-order="false">
-  <classes>
- 
+
+  <classes> 
     <class name="test.Test1">
       <methods>
         <include name="m1" />
         <include name="m2" />
       </methods>
-    </class>
- 
-    <class name="test.Test2" />
- 
+    </class> 
+    <class name="test.Test2" /> 
   </classes>
 </test>

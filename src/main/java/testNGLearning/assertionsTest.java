@@ -15,7 +15,8 @@ public class assertionsTest extends baseTest {
 
 		/*
 		 * SoftAssert softassert = new SoftAssert(); // low priority test cases
-		 * softassert.assertEquals(exp_title, actual_title); softassert.all();
+		 * softassert.assertEquals(exp_title, actual_title); 
+		 * softassert.all();
 		 */
 
 	}

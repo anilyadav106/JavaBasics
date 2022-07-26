@@ -12,7 +12,9 @@ import java.io.IOException;
 public class child extends Parent {
 
 	public child() {
+		
 		super();
+		
 		System.out.println(super.display("anil"));
 
 		System.out.println("I am child constructor");
@@ -27,12 +29,12 @@ public class child extends Parent {
 
 	public final String display1(String a) {
 		System.out.println("I am in child class");
-		return "anil1";
+		return "child";
 	}
 
 	public static void main(String[] args) throws IOException {
 
-		child c = new child(3);
+		child c = new child(2);
 
 	}
 

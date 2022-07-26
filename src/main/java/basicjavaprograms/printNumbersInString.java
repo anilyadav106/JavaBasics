@@ -13,7 +13,6 @@ public class printNumbersInString {
 			if (Character.isDigit(s1[i])) {
 				System.out.print(s1[i]);
 			}
-
 		}
 
 	}

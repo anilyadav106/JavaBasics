@@ -13,7 +13,7 @@ public class alertsJavaScript {
 		System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/drivers/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
-
+	
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");

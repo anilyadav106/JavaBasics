@@ -7,7 +7,8 @@ public class replaceCharInString {
 		String s = "my name is kkk";
 
 		System.out.println(s.replace("k", "p"));
-
+	    System.out.println(s.charAt(1));
+	
 	}
 
 }

@@ -15,7 +15,7 @@ public class Parent {
 	}
 
 	public static final String display(String a) {
-		System.out.println("I am in child class");
-		return "anil";
+		System.out.println("I am in parent class");
+		return "parent";
 	}
 }

@@ -13,10 +13,10 @@ public class stringSorting {
 		String str = "My name is anil";
 
 		char[] chr = str.toCharArray();
-
+ 
 		Arrays.sort(chr);
-
-		System.out.println("sorted array is : " + new String(chr));
+		 
+		System.out.println("sorted array is : " +Arrays.toString(chr));
 	}
 
 }

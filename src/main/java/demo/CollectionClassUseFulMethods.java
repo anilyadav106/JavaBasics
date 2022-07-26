@@ -30,7 +30,7 @@ public class CollectionClassUseFulMethods {
 		dest.add(76);
 
 		/*
-		 * #1 copying src list to dest list provided dest have atleast capacity
+		 * #1 copying src list to dest list  ,provided dest have atleast capacity
 		 * to absorb src
 		 */
 		Collections.copy(dest, src);

@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55303" started-at="2020-04-30T15:46:58Z" finished-at="2020-04-30T15:47:54Z">
+  <suite name="Default suite" duration-ms="45" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55303" started-at="2020-04-30T15:46:58Z" finished-at="2020-04-30T15:47:54Z">
-      <class name="demo.webTables">
-        <test-method status="PASS" signature="demoTest()[pri:0, instance:demo.webTables@725bef66]" name="demoTest" duration-ms="55279" started-at="2020-04-30T21:16:58Z" finished-at="2020-04-30T21:17:54Z">
+    <test name="Default test" duration-ms="45" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+      <class name="basicjavaprograms.A">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:basicjavaprograms.A@631330c]" name="beforeTest" is-config="true" duration-ms="6" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demoTest -->
-      </class> <!-- demo.webTables -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A@631330c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="A1()[pri:0, instance:basicjavaprograms.A@631330c]" name="A1" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A@631330c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:basicjavaprograms.A@631330c]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- basicjavaprograms.A -->
+      <class name="basicjavaprograms.A$B">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="t1()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="t1" duration-ms="4" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="t2()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="t2" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="A1()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="A1" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- basicjavaprograms.A$B -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

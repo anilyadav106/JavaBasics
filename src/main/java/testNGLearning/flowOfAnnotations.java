@@ -1,5 +1,6 @@
 package testNGLearning;
 
+import org.openqa.selenium.support.CacheLookup;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -8,17 +9,18 @@ import org.testng.annotations.Test;
 
 public class flowOfAnnotations extends baseTest {
 
+	
 	@BeforeTest
 	public void CreateDBConnection() {
 
-		System.out.println("Connecting to db...");
+		System.out.println("Before Test...");
 
 	}
 
 	@AfterTest
 	public void CloseDBConnection() {
 
-		System.out.println("Closing db connection...");
+		System.out.println("After Test...");
 
 	}
 
@@ -29,7 +31,7 @@ public class flowOfAnnotations extends baseTest {
 		System.out.println("Launching browser");
 	}
 
-	@AfterMethod
+	@AfterMethod(enabled = true,alwaysRun = true)
 
 	public void CloseBrowser() {
 
@@ -41,6 +43,7 @@ public class flowOfAnnotations extends baseTest {
 	public void doUserRegister() {
 
 		System.out.println("test1");
+		
 
 	}
 
@@ -53,7 +56,7 @@ public class flowOfAnnotations extends baseTest {
 	@Test(priority = 2, dependsOnMethods = "doLogin", groups = { "smoke" })
 	public void doAddToCart() {
 
-		System.out.println("test2");
+		System.out.println("test3");
 	}
 
 }
