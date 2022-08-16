@@ -20,7 +20,10 @@ public class stringBuilder {
 		System.out.println(sbu);
 		sbu.insert(5, "Yadav ");
 		System.out.println(sbu);
-
+		System.out.println("************reverse string*****************");	
+	System.out.println(sbu.reverse());
+	
+	
 		System.out.println("************StringBuffer*****************");
 
 		StringBuffer sb = new StringBuffer("This is Sunil"); // thread safe, at

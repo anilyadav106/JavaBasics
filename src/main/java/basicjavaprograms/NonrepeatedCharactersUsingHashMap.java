@@ -17,7 +17,7 @@ public class NonrepeatedCharactersUsingHashMap {
 	 */
 	public static void main(String[] args) {
 		String str = "mamta";
-
+ 
 		 
 		str.toCharArray();
 		char[] ch = str.toCharArray();
