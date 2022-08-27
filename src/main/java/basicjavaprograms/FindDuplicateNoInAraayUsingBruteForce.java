@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @author anilkumar06
  *
  */
-public class DuplicateNoInAraayUsingBruteForce {
+public class FindDuplicateNoInAraayUsingBruteForce {
 
 	/**
 	 * @param args

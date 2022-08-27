@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @author anilkumar06
  *
  */
-public class DuplicateNoInArrayUsingSorting {
+public class FindDuplicateNoInArrayUsingSorting {
 
 	/**
 	 * @param args

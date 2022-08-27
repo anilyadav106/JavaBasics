@@ -14,7 +14,7 @@ import java.util.Set;
  * @author anilkumar06
  *
  */
-public class DuplicateCharUsingHashMap {
+public class FindDuplicateCharUsingHashMap {
 
 	/**
 	 * @param args
