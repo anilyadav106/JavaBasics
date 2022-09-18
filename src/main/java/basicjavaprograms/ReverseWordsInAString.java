@@ -24,6 +24,7 @@ public class ReverseWordsInAString {
 	static String reverseWords(String str) {
 		
 		String strTemp="";
+		
 		String[] strArray= str.split(" ");
 		
 		for ( String s: strArray) {
@@ -31,7 +32,7 @@ public class ReverseWordsInAString {
 			StringBuffer strBUffer = new StringBuffer(s);
 			StringBuffer revString=strBUffer.reverse();
 			
-			strTemp=strTemp+ " " + revString;
+			strTemp=strTemp+ revString+" ";
 		}
 		 return  strTemp;
 		 

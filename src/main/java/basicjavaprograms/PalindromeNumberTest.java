@@ -19,17 +19,16 @@ public class PalindromeNumberTest {
 		int r = 0;
 		int temp = 0;
 		while (num > 0) {
-// get the reminder as r
-			r = num % 10;  // 5 then 4 then 3
-		 
+     // get the reminder as r
+			r = num % 10; // 5 then 4 then 3
+
 			temp = (temp * 10) + r;
-			
+
 			/*
 			 * 0+5 ,50+4=54, 540+3=543
 			 */
-			
-			System.out.println(temp);
-			num = num / 10;   //  345 to 34 to 3
+
+ 			num = num / 10; // 345 to 34 to 3
 		}
 
 		if (num == temp) {

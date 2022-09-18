@@ -6,6 +6,7 @@ package basicjavaprograms;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  * @author anilkumar06
@@ -23,7 +24,8 @@ public class CountDuplicateWords {
 
 		String[] sarray = s.split(" ");
 
-		Map<String, Integer> map = new HashMap();
+	 
+	Map<String, Integer> map = new HashMap();
 
 		for (String s1 : sarray) {
 			///intitially the map is empty and has null keys
@@ -40,6 +42,18 @@ public class CountDuplicateWords {
 		}
 //now updated map
 		System.out.println(map);
+		
+		// now get a set of unique set
+		Set <String> set= map.keySet();
+		//itearte and check when its value is >1 , that key has duplicate words
+		for( String s1: set) {
+			if(map.get(s1)>1) {
+				
+				System.out.println(s1 + " is " + map.get(s1));
+			}	
+			
+		}
+		
 
 	}
 }

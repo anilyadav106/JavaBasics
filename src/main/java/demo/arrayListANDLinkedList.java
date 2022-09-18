@@ -86,6 +86,18 @@ public class arrayListANDLinkedList {
 		Collections.reverse((obj1)); // than just reverse the sorted
 										// collection
 
+		List<Integer> xlist = new ArrayList<>();
+		
+		xlist.add(10);
+		xlist.add(20);
+		xlist.add(22);
+		/*
+		 * to find max/min in a collection
+		 */		
+		System.out.println(Collections.max(xlist));
+		System.out.println(Collections.min(xlist));
+
+		
 		System.out.println("Descending ordered Items in list are :" + obj1);
 
 		System.out.println("Clearing the list   ");

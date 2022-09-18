@@ -32,7 +32,7 @@ public class child extends parent {
 		System.out.println(p.name);
 
 		/*
-		 * child object referenced by parent type , all parent variables and methods are
+		 * child object referenced by parent type , all parent variables and parent overridden methods in child are
 		 * accessed
 		 */
 		System.out.println("**** up casting****");
@@ -40,11 +40,14 @@ public class child extends parent {
 
 		System.out.println(c1.i);
 		System.out.println(c1.name);
+		c1.m1();
 
-		System.out.println("up casting tricky assignment");
+		System.out.println("*****up casting tricky assignment*****");
 		child c2 = new child();
-		parent p2 = c2;
-
+ 		parent p2 = c2; 
+ 		
+ 		// above 2 lines are same as parent p2 = new child();
+ 		
 		p2.m1();
 		System.out.println(p2.i);
 		System.out.println(p2.name);

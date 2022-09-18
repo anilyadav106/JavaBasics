@@ -10,7 +10,7 @@ import java.util.Set;
 
 /**
  * @author anilkumar06
- *
+ *My favourite approach
  */
 public class FindDuplicateNoInArrayUsingHashSet {
 

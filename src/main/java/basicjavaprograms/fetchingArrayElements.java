@@ -4,6 +4,7 @@
 package basicjavaprograms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author anilkumar06
@@ -24,11 +25,10 @@ public class fetchingArrayElements {
 		 
 	}
 	
-	public static  ArrayList<Integer> desiredList() {
-		
+	public static  ArrayList<Integer> desiredList() { 
 		
 		int[] hArray = {7,2,5,18,19,15,27,31,6,27,45,32};
-
+ 
 		int max= hArray[0];
 		ArrayList<Integer> newlist= new ArrayList<Integer>();
 
@@ -40,9 +40,7 @@ public class fetchingArrayElements {
 
 		newlist.add(max);
 		
-		}
-
-	
+		} 
 		 
 	}
 		return newlist;

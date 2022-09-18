@@ -16,7 +16,6 @@ public class stringSorting {
  
 		Arrays.sort(chr);
 		 
-		System.out.println("sorted array is : " +Arrays.toString(chr));
-	}
+ 	}
 
 }

@@ -1,71 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+  <suite name="Default suite" duration-ms="35" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
     <groups>
+      <group name="functional">
+        <method signature="flowOfAnnotations.doUserRegister()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doUserRegister" class="testNGLearning.flowOfAnnotations"/>
+      </group> <!-- functional -->
+      <group name="smoke">
+        <method signature="flowOfAnnotations.doUserRegister()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doUserRegister" class="testNGLearning.flowOfAnnotations"/>
+        <method signature="flowOfAnnotations.doLogin()[pri:1, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doLogin" class="testNGLearning.flowOfAnnotations"/>
+        <method signature="flowOfAnnotations.doAddToCart()[pri:2, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doAddToCart" class="testNGLearning.flowOfAnnotations"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="45" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
-      <class name="basicjavaprograms.A">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:basicjavaprograms.A@631330c]" name="beforeTest" is-config="true" duration-ms="6" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+    <test name="Default test" duration-ms="35" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
+      <class name="testNGLearning.flowOfAnnotations">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="setup" is-config="true" duration-ms="6" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A@631330c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="CreateDBConnection()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="CreateDBConnection" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="A1()[pri:0, instance:basicjavaprograms.A@631330c]" name="A1" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- CreateDBConnection -->
+        <test-method status="PASS" signature="teadDown1()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="teadDown1" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A@631330c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- teadDown1 -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:basicjavaprograms.A@631330c]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="doUserRegister()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doUserRegister" duration-ms="4" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- basicjavaprograms.A -->
-      <class name="basicjavaprograms.A$B">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- doUserRegister -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="t1()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="t1" duration-ms="4" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="doLogin()[pri:1, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doLogin" duration-ms="1" started-at="2022-09-11T18:55:50 IST" depends-on-methods="testNGLearning.flowOfAnnotations.doUserRegister" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- t1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="launchBrowser" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="t2()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="t2" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="doAddToCart()[pri:2, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="doAddToCart" duration-ms="1" started-at="2022-09-11T18:55:50 IST" depends-on-methods="testNGLearning.flowOfAnnotations.doLogin" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- t2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- doAddToCart -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="A1()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="A1" duration-ms="1" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="teadDown2()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="teadDown2" is-config="true" duration-ms="1" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:basicjavaprograms.A$B@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-05-27T19:55:52 IST" finished-at="2022-05-27T19:55:52 IST">
+        </test-method> <!-- teadDown2 -->
+        <test-method status="PASS" signature="CloseDBConnection()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="CloseDBConnection" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- basicjavaprograms.A$B -->
+        </test-method> <!-- CloseDBConnection -->
+        <test-method status="PASS" signature="teadDown()[pri:0, instance:testNGLearning.flowOfAnnotations@587d1d39]" name="teadDown" is-config="true" duration-ms="0" started-at="2022-09-11T18:55:50 IST" finished-at="2022-09-11T18:55:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+      </class> <!-- testNGLearning.flowOfAnnotations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

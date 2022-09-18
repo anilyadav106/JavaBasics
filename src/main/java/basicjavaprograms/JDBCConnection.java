@@ -27,7 +27,7 @@ public class JDBCConnection {
 	 
 		Connection con = null;
 		try {
-			con = DriverManager.getConnection("fee", "user", "password");
+			con = DriverManager.getConnection("fee.com", "user", "password");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

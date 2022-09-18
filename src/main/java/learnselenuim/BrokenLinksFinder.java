@@ -2,12 +2,15 @@ package learnselenuim;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.sql.DriverManager;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class BrokenLinksFinder  { 
@@ -16,8 +19,7 @@ public void getBrokenLinks() {
 
 	String driverPath = System.getProperty("user.dir");
 
-	System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/drivers/chromedriver.exe");
-
+	WebDriverManager.chromedriver().setup();
 	WebDriver driver = new ChromeDriver();
 
 	driver.manage().window().maximize();

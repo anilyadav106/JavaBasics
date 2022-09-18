@@ -1,15 +1,15 @@
 package testNGLearning;
 
-import org.openqa.selenium.support.CacheLookup;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class flowOfAnnotations extends baseTest {
 
-	
 	@BeforeTest
 	public void CreateDBConnection() {
 
@@ -28,21 +28,21 @@ public class flowOfAnnotations extends baseTest {
 
 	public void launchBrowser() {
 
-		System.out.println("Launching browser");
+		System.out.println(" Before method-Launching browser");
 	}
 
 	@AfterMethod(enabled = true,alwaysRun = true)
 
 	public void CloseBrowser() {
 
-		System.out.println("Closing browser");
+		System.out.println("After method-Closing browser");
 	}
 
 	@Test(priority = 0, groups = { "smoke", "functional" })
 
 	public void doUserRegister() {
 
-		System.out.println("test1");
+		System.out.println(" Test-test1");
 		
 
 	}
@@ -50,13 +50,13 @@ public class flowOfAnnotations extends baseTest {
 	@Test(priority = 1, dependsOnMethods = "doUserRegister", groups = { "smoke" })
 	public void doLogin() {
 
-		System.out.println("test2");
+		System.out.println(" Test-test2");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "doLogin", groups = { "smoke" })
 	public void doAddToCart() {
 
-		System.out.println("test3");
+		System.out.println("Test-test3");
 	}
 
 }

@@ -11,6 +11,7 @@ public class exceptionDemo {
 		} catch (ArithmeticException e) {
 
 			System.out.println(e.getMessage());
+
 		}
 
 		catch (Exception e) {

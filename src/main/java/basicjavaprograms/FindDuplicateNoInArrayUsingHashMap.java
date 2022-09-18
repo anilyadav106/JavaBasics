@@ -23,7 +23,8 @@ public class FindDuplicateNoInArrayUsingHashMap {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
 		for (int i : array) {
-			// if unable to add in set , add method returns false. Only unique element are
+			// if map already has key, containsKey method returns false. Only unique element
+			// are
 			// added in set
 			if (!map.containsKey(i)) {
 
@@ -34,17 +35,17 @@ public class FindDuplicateNoInArrayUsingHashMap {
 			}
 
 		}
-		
-		
+
 		System.out.println(map);
-	for (Integer x:	map.keySet()) {
 		
 		
-		if(map.get(x)>1) {
-			
-			System.out.println("duplicate element founded is " + x);
+		for (Integer x : map.keySet()) {
+
+			if (map.get(x) > 1) {
+
+				System.out.println("duplicate element founded is " + x);
+			}
 		}
-	}
 	}
 
 }

@@ -5,6 +5,8 @@ package basicjavaprograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -22,10 +24,10 @@ public class arrayPractice {
 		int[] arr = { 5, 6, 7, 8, 2, 3, 1, 10, 9 };
 		int i = arr.length;
 		System.out.println(i);
-	 
 
 		// sorts only 7,8,2 in ascending order
 		Arrays.sort(arr, 2, 5);
+		
 		System.out.println(Arrays.toString(arr));
 
 		String s1 = "Hello World";
@@ -36,7 +38,7 @@ public class arrayPractice {
 		System.out.println(s1.equals(s3));
 		System.out.println(s1.hashCode());
 		System.out.println(s2.hashCode());
-		System.out.println(s1==s2);
+		System.out.println(s1 == s2);
 
 		int[] al = new int[5];
 		al[0] = 15;
@@ -48,29 +50,32 @@ public class arrayPractice {
 			System.out.println(a);
 
 		}
-		
+
 		List<Integer> list = new ArrayList<>();
-		
+
 		list.add(1);
 		list.add(2);
-		
+
 		for (Integer in : list) {
 			System.out.println(in);
 		}
-		 
+
 //			System.out.println("********list interface and its implemented class arraylist");
-		
+
 		List<String> al1 = new ArrayList<String>();
 		al1.add(0, "Bunny");
 		al1.add(1, "Hunny");
 		al1.add(2, "Punny");
-	
 		System.out.println(al1);
 		System.out.println(al1.size()); // 3
 
 		al1.remove(0);
 		System.out.println(al1.size());// 2
 		System.out.println(al1.get(0)); // Hunny
+
+		System.out.println(al1.contains("Bunny")); // its alredy removed-false
+		System.out.println(al1.contains("Hunny"));
+
 
 	}
 

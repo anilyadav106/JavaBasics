@@ -20,6 +20,7 @@ public class hashMap {
 		hm.put("RollNo2", 123);
 		hm.put("RollNo3", 133);
 		hm.put("RollNo3", 134);
+	
 
 		System.out.println("The map is:" + hm);
 		System.out.println("The size of map is:" + hm.size()); // 3
@@ -56,7 +57,7 @@ public class hashMap {
 		tree_map.put(10, "Red");
 		tree_map.put(20, "Green");
 		tree_map.put(30, "Black");
-		tree_map.put(40, "White");
+		tree_map.put(60, "White");
 		tree_map.put(50, "Pink");
 		System.out.println("Orginal TreeMap content: " + tree_map);
 		/* false means not inclusive of 20 no key */

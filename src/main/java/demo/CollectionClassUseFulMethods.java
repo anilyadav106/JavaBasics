@@ -17,17 +17,20 @@ public class CollectionClassUseFulMethods {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		ArrayList<Integer> src = new ArrayList<Integer>();
 		src.add(42);
 		src.add(94);
 		src.add(1);
 		src.add(16);
+		
 
 		ArrayList<Integer> dest = new ArrayList<Integer>();
 		dest.add(11);
 		dest.add(15);
 		dest.add(89);
 		dest.add(76);
+		dest.add(88);
 
 		/*
 		 * #1 copying src list to dest list  ,provided dest have atleast capacity

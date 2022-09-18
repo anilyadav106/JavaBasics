@@ -2,6 +2,7 @@ package demo;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -18,13 +19,16 @@ public class demoSelenuim {
 	public void demoTest() throws InterruptedException {
 
 		WebDriverManager.chromedriver().setup();
-
+ 
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://money.rediff.com/gainers");
 		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		//driver.manage().window().maximize();
+ 	driver.manage().window().setSize(new Dimension(100, 300));
+	
+	
+ 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
 	}
 }

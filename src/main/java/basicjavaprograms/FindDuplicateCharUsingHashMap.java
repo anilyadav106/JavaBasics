@@ -4,6 +4,7 @@
 package basicjavaprograms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +26,7 @@ public class FindDuplicateCharUsingHashMap {
 		String s = "AAaNNIL";
 
 		char[] c = s.toCharArray();
-
+ 
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 
 		for (Character ch : c) {
@@ -42,17 +43,17 @@ public class FindDuplicateCharUsingHashMap {
 		}
 
 
-	for (Map.Entry<Character, Integer> set:map.entrySet()) {
-			
-			if(set.getValue()>1) {
-				
-				System.out.println(set.getKey()+ " repeating " +set.getValue() + " times" );
-			}
-			
-			 
-		}
 	 
-	
+	 // using keyset method
+	Set<Character> set= map.keySet();
+	//itearte and check when its value is >1 , that key has duplicate words
+	for( Character s1: set) {
+		if(map.get(s1)>1) {
+			
+			System.out.println(s1 +" repeating " + map.get(s1) + " times");
+		}	
+		
+	}
 		 
 		 
  // print only those values which are > 1 i.e duplicate characters

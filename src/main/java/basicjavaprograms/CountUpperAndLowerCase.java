@@ -24,6 +24,7 @@ public class CountUpperAndLowerCase {
 		for (int i = 0; i < test.length(); i++) {
 
 			char c = test.charAt(i); 
+			
 
 			if (c > 65 && c < 90) {
 
