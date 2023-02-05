@@ -41,8 +41,7 @@ public class ActionAPI {
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Men']")));
 
 		Actions act = new Actions(driver);
-		act.moveToElement(menButton).perform();
-		
+		act.moveToElement(menButton).perform(); 
 	 
 		
 		WebElement tshirtButton = wait

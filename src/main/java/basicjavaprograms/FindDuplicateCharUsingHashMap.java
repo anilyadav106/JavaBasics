@@ -23,7 +23,7 @@ public class FindDuplicateCharUsingHashMap {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s = "AAaNNIL";
+		String s = "adidas";
 
 		char[] c = s.toCharArray();
  
@@ -49,7 +49,7 @@ public class FindDuplicateCharUsingHashMap {
 	//itearte and check when its value is >1 , that key has duplicate words
 	for( Character s1: set) {
 		if(map.get(s1)>1) {
-			
+			System.out.println(map.get(s1));   // print only those values which are > 1 i.e duplicate characters
 			System.out.println(s1 +" repeating " + map.get(s1) + " times");
 		}	
 		

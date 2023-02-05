@@ -34,11 +34,13 @@ public class arrayPractice {
 		String s2 = "Hello World";
 
 		String s3 = new String("Hello World");
+		// to compare object memory,does the reference variables points to the same m/m location
 		System.out.println(s1 == s3);
+		//to compare object content
 		System.out.println(s1.equals(s3));
 		System.out.println(s1.hashCode());
 		System.out.println(s2.hashCode());
-		System.out.println(s1 == s2);
+		System.out.println(s1 == s2); // s1 and s2 refers to same memory location of -862545276
 
 		int[] al = new int[5];
 		al[0] = 15;

@@ -19,7 +19,15 @@
 </suite>
 
 
-----------------------
+----------------------Basics---------
+
+    A suite is represented by one XML file. It can contain one or more tests and is defined by the suite tag.
+    A test is represented by test and can contain one or more TestNG classes.
+    A TestNG class is a Java class that contains at least one TestNG annotation. It is represented by the  class tag and can contain one or more test methods.
+    A test method is a Java method annotated by @Test in your source
+
+
+
 <test> --an element having name as attributes...
 <test> element have further nested elements like classes, class
 
@@ -51,6 +59,11 @@ BeforeClass
 BeforeMethod
 Test
 AfterMethod
+
+BeforeMethod
+Test
+AfterMethod
+
 
 AfterClass
 AfterTest

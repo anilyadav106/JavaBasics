@@ -5,6 +5,9 @@ package basicjavaprograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 
 /**
  * @author anilkumar06
@@ -28,10 +31,11 @@ public class fetchingArrayElements {
 	public static  ArrayList<Integer> desiredList() { 
 		
 		int[] hArray = {7,2,5,18,19,15,27,31,6,27,45,32};
+	 
  
 		int max= hArray[0];
 		ArrayList<Integer> newlist= new ArrayList<Integer>();
-
+ 
 		for (int i=0;i<hArray.length;i++){
 
 		if (hArray[i]>=max){

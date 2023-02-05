@@ -14,6 +14,21 @@ public class printNumbersInString {
 				System.out.print(s1[i]);
 			}
 		}
+		
+		
+		//store numbers only in a string and print
+
+		String s2 = "";
+
+		for (int i = 0; i < s1.length; i++) {
+
+			if (Character.isDigit(s1[i])) {
+				s2 = s2 + s1[i];
+
+			}
+
+		}
+		System.out.println(s2);
 
 	}
 

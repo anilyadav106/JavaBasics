@@ -17,14 +17,14 @@ public class FirstAndLastCharactersOfStrings {
 		
 		
 		String str ="www.amazon.com";
-		//print first4char  
-	 String first4char=str.substring(0, 4);
- 	System.out.println(first4char);
+		//print first3char  
+	 String first3char=str.substring(0, 3);
+ 	System.out.println(first3char);
  	
  	
-	//print last4char  
- 	 String last4char=str.substring(str.length()-4, str.length());
-  	System.out.println(last4char);
+	//print last3char  
+ 	 String last3char=str.substring(str.length()-3, str.length());
+  	System.out.println(last3char);
   	
  	
 

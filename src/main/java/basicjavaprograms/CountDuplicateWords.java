@@ -25,12 +25,12 @@ public class CountDuplicateWords {
 		String[] sarray = s.split(" ");
 
 	 
-	Map<String, Integer> map = new HashMap();
+	Map<String, Integer> map = new HashMap<String, Integer>();
 
 		for (String s1 : sarray) {
 			///intitially the map is empty and has null keys
 			if (map.get(s1) == null) {
-//put the first element I and set its value as 1
+//put the first element and set its value as 1
 				map.put(s1, 1);
 			}
 

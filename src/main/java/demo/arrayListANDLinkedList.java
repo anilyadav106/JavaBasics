@@ -37,13 +37,14 @@ public class arrayListANDLinkedList {
 		System.out.println("Items in list are :" + obj1);
 		System.out.println("last index of duplicate item Extent is " + obj1.lastIndexOf("Extent"));
 		System.out.println("Index of item which doesnt exists is -1 ? : " + obj1.indexOf("QTP"));
-                
+
 		System.out.println("Fetching item :" + obj1.get(1));
 		System.out.println("Does list contains items 'Java' :" + obj1.contains("Java"));
 
 		/*
-		 * If there are duplicate elements present in the list and user wants to remove the same,
-		 *  it removes the * first occurrence of the specified element from the list.
+		 * If there are duplicate elements present in the list and user wants to remove
+		 * the same, it removes the * first occurrence of the specified element from the
+		 * list.
 		 */
 
 		obj1.remove("Extent");
@@ -66,8 +67,8 @@ public class arrayListANDLinkedList {
 
 		System.out.println("index is :" + obj1.indexOf("Chrome"));
 		/*
-		 * Here fromIndex is inclusive and toIndex is exclusive. 0,1 and 2 index
-		 * values will make up a new list)
+		 * Here fromIndex is inclusive and toIndex is exclusive. 0,1 and 2 index values
+		 * will make up a new list)
 		 */
 		System.out.println("Sublist is : " + obj1.subList(0, 3));
 
@@ -76,8 +77,8 @@ public class arrayListANDLinkedList {
 		System.out.println("Reveresed ordered Items in list are :" + obj1);
 
 		System.out.println("**********Ascending Sorting***********");
-		
-        Collections.sort(obj1); // to sort items
+
+		Collections.sort(obj1); // to sort items
 		System.out.println("Ascending ordered Items in list are :" + obj1);
 
 		System.out.println("**********Descending Sorting***********");
@@ -87,17 +88,16 @@ public class arrayListANDLinkedList {
 										// collection
 
 		List<Integer> xlist = new ArrayList<>();
-		
+
 		xlist.add(10);
 		xlist.add(20);
 		xlist.add(22);
 		/*
 		 * to find max/min in a collection
-		 */		
+		 */
 		System.out.println(Collections.max(xlist));
 		System.out.println(Collections.min(xlist));
 
-		
 		System.out.println("Descending ordered Items in list are :" + obj1);
 
 		System.out.println("Clearing the list   ");

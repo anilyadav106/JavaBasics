@@ -26,7 +26,7 @@ public class FindDuplicateNoInAraayUsingBruteForce {
 				
 				if(array[i]==array[j]) {
 					
-					System.out.println("duplicate element found is :" + array[i]);
+					System.out.println("duplicate element found is :" + array[i]);  // no counting
 					
 				}
 			}

@@ -37,8 +37,7 @@ public class FindDuplicateNoInArrayUsingHashMap {
 		}
 
 		System.out.println(map);
-		
-		
+
 		for (Integer x : map.keySet()) {
 
 			if (map.get(x) > 1) {

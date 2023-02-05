@@ -3,7 +3,9 @@
  */
 package basicjavaprograms;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -18,9 +20,10 @@ public class DuplicateCharactersUsingForLoops {
 	public static void main(String[] args) {
 
 		  String s= "Welcome to coforge";
-		  int count = 0;
+ 
 		  
 		  Set<Character> set = new HashSet<Character>();
+		  
 		  
 		  for ( int i=0;i< s.length();i++) {
 			  
@@ -33,7 +36,7 @@ public class DuplicateCharactersUsingForLoops {
 				  } 
 			  } 
 		  }
-		  System.out.println(set); 
+		  System.out.println(set.size()); 
 		  
 	} 
 }

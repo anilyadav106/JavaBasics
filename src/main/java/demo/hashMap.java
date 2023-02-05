@@ -12,6 +12,8 @@ public class hashMap {
 
 	public static void main(String[] args) {
 
+		
+		 
 		HashMap<String, Integer> hm = new HashMap<String, Integer>(); // key
 																		// value
 																		// pair
@@ -20,10 +22,12 @@ public class hashMap {
 		hm.put("RollNo2", 123);
 		hm.put("RollNo3", 133);
 		hm.put("RollNo3", 134);
+        hm.put("Rollno5", 135);
+
 	
 
 		System.out.println("The map is:" + hm);
-		System.out.println("The size of map is:" + hm.size()); // 3
+		System.out.println("The size of map is:" + hm.size()); // 4 ,only unique
 		System.out.println("Is the map empty? : " + hm.isEmpty());
 		/* return the latest value of duplicate key */
 		System.out.println("The value of a specific key is:" + hm.get("RollNo3"));
@@ -59,6 +63,7 @@ public class hashMap {
 		tree_map.put(30, "Black");
 		tree_map.put(60, "White");
 		tree_map.put(50, "Pink");
+		
 		System.out.println("Orginal TreeMap content: " + tree_map);
 		/* false means not inclusive of 20 no key */
 		System.out.println("Keys are greater than 20: " + tree_map.tailMap(20, false));

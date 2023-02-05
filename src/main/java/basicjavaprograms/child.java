@@ -57,7 +57,7 @@ public class child extends parent {
 		 */
 		parent p3 = new child();
 
-		p3.m2();
+		p3.m2();   // parent method will be called but if m2() would have been overriddent in child then that child m2() will be called
 
 	}
 

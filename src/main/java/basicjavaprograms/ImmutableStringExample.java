@@ -22,13 +22,15 @@ public class ImmutableStringExample {
 		System.out.println(a.hashCode());
 
 		/*
-		 * a new literal is created in SCP and "a" now refer to a+"decode" object
+		 * a new literal is created in SCP and "a" now refer to a+"decode" object,
 		 * earlier a reference is now lost. Earlier code is now not referred by any
 		 * variable
 		 */
 
 		// now try to modify the string
 		a = a + "decode";
+	
+		System.out.println(a);
 
 		System.out.println(a.hashCode());
 		/*

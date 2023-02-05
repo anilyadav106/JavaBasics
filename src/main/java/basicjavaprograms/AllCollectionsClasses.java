@@ -4,7 +4,9 @@
 package basicjavaprograms;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -24,13 +26,16 @@ public class AllCollectionsClasses {
 
 	/**
 	 * @param args
+	 * Iterable is the parent Interface of all and has only 1 method-iterator()
+	 * Collections is a class
+	 * Collection is an Interface
 	 */
 	public static void main(String[] args) {
 
 		System.out.println("********List **********");
 		/*
 		 * maintains insertion order- means while retrieving you get in same order in
-		 * order of inserting no default sorting contains duplicate elements
+		 * order of inserting ,no default sorting, contains duplicate elements,
 		 * can contains nulls also
 		 */
 		List<Integer> list = new ArrayList<>();
@@ -41,7 +46,7 @@ public class AllCollectionsClasses {
 		list.add(null);
 		list.add(null);
 		System.out.println(list);
-
+		System.out.println("********LinkedList **********");
 		List<String> list1 = new LinkedList<>();
 		list1.add("a");
 		list1.add("b");
@@ -49,19 +54,21 @@ public class AllCollectionsClasses {
 		list1.add("c");
 		System.out.println(list1);
 
-		/* There is no sorted list, instead we can user Collections.sort(list);
+		/* There is no sorted list, instead we can use  Collections.sort(list);
 		 * 
 		 *  Because we assume that list will always give us result based on index, if index is changed due to sorting, we loose that confidence*/
-		/*
+		
+		/* There is no TreeList class to have sorted items
 		 * List<Object> list1 = new TreeList<>(); list1.add("a"); list1.add("b");
 		 * list1.add("d"); list1.add("c"); System.out.println(list1);
 		 */
+		 
 		System.out.println("********Set **********");
 		/*
 		 * Doesn't maintains insertion order- means while retrieving you get in random order  
 		 * - no default sorting
 		 * can not contains duplicate elements
-		 * can contains nulls also
+		 * can contains nulls also but not duplicate nulls
 		 */
 		
 		/* does not maintains insertion order while checking duplicates */
@@ -77,7 +84,7 @@ public class AllCollectionsClasses {
 		set.add(null);
 		System.out.println(set);
 		
-		
+		System.out.println("********LinkedHashSet **********");
 		/* maintains insertion order while checking duplicates */
 		Set<Object> set1 = new LinkedHashSet<>();
 		set1.add("anil");
@@ -91,6 +98,7 @@ public class AllCollectionsClasses {
 		set1.add(null);
 		System.out.println(set1);
 		
+		System.out.println("********TreeSet **********");
 		/* sorted while checking duplicates 
 		 * can not have nulls -because null can not be sorted*/
 		Set<Object> set2 = new TreeSet<>();
@@ -100,6 +108,7 @@ public class AllCollectionsClasses {
 		set2.add("2");
 		set2.add("1");
 		set2.add("2");  
+	//	set2.add(null);  // it will give null pointer exception
 		System.out.println(set2);
 		
 		System.out.println("********Map **********");
@@ -123,10 +132,14 @@ public class AllCollectionsClasses {
 		map.put("isMonitor", true);
 		map.put(null, 1);
 		map.put(null, 2);
+	
 		System.out.println(map);
 		
+	 
+	
 		/* Maintains insertion order */
 		Map<Object, Object> map1 = new LinkedHashMap<>();
+		map1.put("name", "anil");
 		map1.put("state", "harayana");
 		map1.put("id", 1);
 		map1.put("rollno", 22);
@@ -138,6 +151,8 @@ public class AllCollectionsClasses {
 		map1.put(null, 1);
 		map1.put(null, 2);
 		System.out.println(map1);
+		
+	
 		
 		/* sorted order of keys in result set*
 		 * can not have null keys-nulls can not be sorted*/
@@ -158,7 +173,12 @@ public class AllCollectionsClasses {
 		Collections.shuffle(list1);
 		System.out.println(list1);
 		
+		/* sort in natural ascedning order */
 		Collections.sort(list1);
+		System.out.println(list1);
+		
+		/* sort in descending order */
+		Collections.sort(list1,Comparator.reverseOrder());
 		System.out.println(list1);
 		
 		List<Integer> list2 = new ArrayList<>();
@@ -166,15 +186,20 @@ public class AllCollectionsClasses {
 		list2.add(44);
 		list2.add(6);
 		list2.add(8); 
+		list2.add(8);  
 
-		Collections.max(list2);
+		/* max value of collection */
 		System.out.println(Collections.max(list2));
-		
-		 Collections.swap(list2, 1,2);   // 11,6,44,8
+		 /* swap  a collection value */
+		 Collections.swap(list2, 1,2);   // 11,6,44,8,8
 		 System.out.println(list2);
-	 
+		 /* reverse a collection */
 		 Collections.reverse(list2) ;	
 		 System.out.println(list2);
+		 
+			/* the no of times 8 is persent in the list2 */
+	   System.out.println( Collections.frequency(list2, 8));
+	 
 		 
 	}
 

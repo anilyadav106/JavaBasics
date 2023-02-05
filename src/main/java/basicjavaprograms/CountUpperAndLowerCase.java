@@ -21,16 +21,17 @@ public class CountUpperAndLowerCase {
 
 		int upper = 0 ;
 
+		 
 		for (int i = 0; i < test.length(); i++) {
 
-			char c = test.charAt(i); 
-			
+			char c = test.charAt(i);  
+			//use character's class methods
 
-			if (c > 65 && c < 90) {
+			if (Character.isUpperCase(c)) {
 
 				upper ++;
 			} 
-			else if (c!=' ')   // ignore  considering white space as lower case
+			else if (Character.isLowerCase(c))   // ignore  considering white space as lower case
 
 			  lower++;  
 		}

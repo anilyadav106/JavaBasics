@@ -18,7 +18,6 @@ public class selenuim4Test {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https:www.amazon.com");
-
-	}
+ 	}
 
 }

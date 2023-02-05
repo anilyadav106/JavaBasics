@@ -20,7 +20,7 @@ public class iFrames extends Testbase {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://w3schools.com/jsref/tryit.asp?filename=tryjsref_submit_get");
-		driver.switchTo().frame("iframeResult");
+		driver.switchTo().frame("iframeResult");   //  by ID or name only- But if no ID or name then use index
 		driver.findElement(By.xpath("/html/body/button")).click();
 
 		driver.switchTo().defaultContent();

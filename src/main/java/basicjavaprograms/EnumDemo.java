@@ -3,6 +3,8 @@
  */
 package basicjavaprograms;
 
+import java.util.Collections;
+
 /**
  * @author anilkumar06
  *
@@ -26,7 +28,7 @@ public class EnumDemo {
 
 		System.out.println(Browsers.CHROME);
 		System.out.println(Browsers.EDGE);
-		
+
 		
 	}
 

@@ -27,6 +27,7 @@ public class FindDuplicateNoInArrayUsingHashSet {
 			// if unable to add in set , add method returns false. Only unique element are
 			// added in set
 			if (!set.add(i)) {
+			
 
 				System.out.println("duplicate element founded   " + i);
 			}

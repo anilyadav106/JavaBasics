@@ -21,6 +21,7 @@ public class CompareArray {
 				String[] str2={"c","d","e"};
 
 			System.out.println(Arrays.equals(str1,str2));
+ 			System.out.println(str2.length);
  				
 			 
 
