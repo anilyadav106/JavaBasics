@@ -53,32 +53,8 @@ public class arrayPractice {
 
 		}
 
-		List<Integer> list = new ArrayList<>();
+		
+		
+		
 
-		list.add(1);
-		list.add(2);
-
-		for (Integer in : list) {
-			System.out.println(in);
-		}
-
-//			System.out.println("********list interface and its implemented class arraylist");
-
-		List<String> al1 = new ArrayList<String>();
-		al1.add(0, "Bunny");
-		al1.add(1, "Hunny");
-		al1.add(2, "Punny");
-		System.out.println(al1);
-		System.out.println(al1.size()); // 3
-
-		al1.remove(0);
-		System.out.println(al1.size());// 2
-		System.out.println(al1.get(0)); // Hunny
-
-		System.out.println(al1.contains("Bunny")); // its alredy removed-false
-		System.out.println(al1.contains("Hunny"));
-
-
-	}
-
-}
+	}}

@@ -10,12 +10,12 @@ import java.util.Arrays;
 public class stringSorting {
 
 	public static void main(String[] args) {
-		String str = "My name is anil";
+		String str = "linaqp";
 
 		char[] chr = str.toCharArray();
  
 		Arrays.sort(chr);
-		 
+		System.out.println(new String(chr)); // String constructor accepts character array
  	}
 
 }

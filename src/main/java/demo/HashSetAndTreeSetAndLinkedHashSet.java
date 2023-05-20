@@ -72,7 +72,7 @@ public class HashSetAndTreeSetAndLinkedHashSet {
 		System.out.println(lhset2);
 
 		System.out.println(
-				"***********Retains common elements which are also in other list or removed which are not in other list    ***********");
+				"***********Retains common elements which are also in other list or removes which are not in other list    ***********");
 		LinkedHashSet<Integer> listA = new LinkedHashSet<Integer>();
 
 		// Adding elements

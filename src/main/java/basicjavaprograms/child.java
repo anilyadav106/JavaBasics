@@ -7,7 +7,7 @@ public class child extends parent {
 	@Override
 	public void m1() {
 
-		System.out.println("child method");
+		System.out.println("overridden child method");
 	}
 
 	public static void main(String[] args) {
@@ -51,10 +51,7 @@ public class child extends parent {
 		p2.m1();
 		System.out.println(p2.i);
 		System.out.println(p2.name);
-
-		/*
-		 * calling the non-overriddenn method of parent class
-		 */
+		System.out.println("****calling the non-overriddenn method of parent class");
 		parent p3 = new child();
 
 		p3.m2();   // parent method will be called but if m2() would have been overriddent in child then that child m2() will be called

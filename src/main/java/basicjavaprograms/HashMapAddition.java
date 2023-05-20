@@ -38,7 +38,7 @@ public class HashMapAddition {
 		System.out.println(list);
 
 		StringBuilder sb = new StringBuilder("anil");
-		// System.out.println(sb.reverse());
+		System.out.println(sb.reverse());
 
 		String s = "anilanilsddc a a ";
 

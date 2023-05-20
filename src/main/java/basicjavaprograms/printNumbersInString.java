@@ -1,5 +1,8 @@
 package basicjavaprograms;
 
+import java.awt.List;
+import java.util.ArrayList;
+
 public class printNumbersInString {
 
 	// use character class
@@ -7,14 +10,7 @@ public class printNumbersInString {
 	public static void main(String[] args) {
 
 		String s = "anilyadav106@gmail.com";
-		char[] s1 = s.toCharArray();
-
-		for (int i = 0; i < s.length(); i++) {
-			if (Character.isDigit(s1[i])) {
-				System.out.print(s1[i]);
-			}
-		}
-		
+		char[] s1 = s.toCharArray(); 
 		
 		//store numbers only in a string and print
 

@@ -21,21 +21,6 @@ public class StringConcat {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		/*
-		 * hashmap---2 int addition related how to revere a string normal and SB class
-		 * string -remove special characters from a string
-		 * 
-		 * how to hit a request--header/payload/authentication how to post a request
-		 * 
-		 * types of requests/status codes
-		 * 
-		 * List [a,b,c,d,e,f,g,h,k,l]; 
-		 * Patterns in framework 
-		 * Types of frameworks Ci?CD
-		 * Pipeline BDD-Cucumber
-		 */
-		
-		
 		String a = "adidas";
 		a.concat("shoes"); // no impact on a value as doing concat has no impact on original string value
 
@@ -48,41 +33,8 @@ public class StringConcat {
 		System.out.println(b); // a new object
 		System.out.println(a); // no impact to adidas
 
+	 
 		
-		 
-		
-		/* how to print only character in a list upto a limit */
-
-		List<Character> list = new ArrayList<>();
-
-		list.add('a');
-		list.add('b');
-		list.add('c');
-		list.add('d');
-		list.add('e');
-		list.add('f');
-		list.add('g');
-		list.add('h');
-
-		System.out.println(list);
-
-		for (Character c : list) {
-
-			if (c.equals('g')) {
-
-				break;
-
-			}
-
-			System.out.println(c);
-
-		}
-		
-		
-		
-
-		
-
 	}
 
 }

@@ -47,7 +47,9 @@ public class fetchingArrayElements {
 		} 
 		 
 	}
+		System.out.println(max);
 		return newlist;
+		
 
 	}
 }

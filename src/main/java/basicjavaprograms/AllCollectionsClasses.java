@@ -118,7 +118,7 @@ public class AllCollectionsClasses {
 		 * Hashmap is faster than HashTable
 		 * no sorting of keys 	
 		 * -Doesn't maintains insertion order- object returns are in random order	 * 
-		 * -can have one multiple null keys but previous one is overridden by latest-so only 1 exists in result set
+		 * -can have   multiple null keys but previous one is overridden by latest-so only 1 exists in result set
 		 * -can have multiple null values
 		 */
 		Map<Object, Object> map = new HashMap<>();

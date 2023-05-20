@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGLearning.forcefullySkipTest">
+      <class name="demo.assertDemo">
         <methods>
-          <include name="skipTest"/>
+          <include name="AHardAssertion"/>
+          <include name="BSoftAssert"/>
+          <include name="CSoftAssert2"/>
         </methods>
-      </class> <!-- testNGLearning.forcefullySkipTest -->
+      </class> <!-- demo.assertDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

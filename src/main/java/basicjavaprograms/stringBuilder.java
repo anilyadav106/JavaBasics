@@ -4,8 +4,9 @@ public class stringBuilder {
 
 	public static void main(String[] args) {
 
-		String s2 = "This is sunil";
-		
+		String s2 = "This is sunil"; 
+		System.out.println(s2);
+		s2.concat("kumar");   // havent stored it, so again s2 will print "This is sunil"; 
 		System.out.println(s2);
 
 		System.out.println("************StringBuilder*****************");

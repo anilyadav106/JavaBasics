@@ -4,7 +4,6 @@
 package basicjavaprograms;
  
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -12,12 +11,17 @@ public class removeTraillingLeadingZeros {
 
 	public static void main(String[] args) {
 
-		System.out.println(removeTraillingA("cataa"));
-		System.out.println(removeTrailingCharacters("cataa"));
+	
+		System.out.println(removeLeadingCharacters( "aaanila")); // nila
+		System.out.println(removeTrailingCharacters("acataa")); //acat
+		System.out.println(removeTrailingChars1( "aacataa")); //aacat
+		System.out.println(removeLeadingChars1( "aacat ")); //cat
+		
+		System.out.println(removeTraillingChars("anilaaa"));  // anil
 
 	}
 
-	public static String removeTraillingA(String str) {
+	public static String removeTraillingChars(String str) {
 
 		char[] ch = str.toCharArray();
 
@@ -28,7 +32,7 @@ public class removeTraillingLeadingZeros {
 			set.add(c);
 		}
 		
-	System.out.println(set);
+	//System.out.println(set);
 
 		String str1 = "";
 		for (Character s : set) {
@@ -51,5 +55,24 @@ public class removeTraillingLeadingZeros {
 	    }
 	    return sb.toString();
 	}
-
+	
+	public static	String removeLeadingCharacters(String s) {
+	    StringBuilder sb = new StringBuilder(s);
+	    while (sb.length() > 0 && sb.charAt(0) == 'a') {
+	        sb.deleteCharAt(0);
+	      
+	    }
+	    return sb.toString();
+	}
+	
+	//shortest
+	
+	public static String removeTrailingChars1(String s) {
+		String s1=s.toLowerCase();
+	    return s1.replaceAll("a+$", "");   // $ means end of string, + means:-The quantifiers specify the number of occurrences of a character.
+	}
+	public static String removeLeadingChars1(String s) {
+		String s1=s.toLowerCase();
+	    return s1.replaceAll("^a+", "");  // ^ means start of string,+ means:-The quantifiers specify the number of occurrences of a character.
+	}
 }

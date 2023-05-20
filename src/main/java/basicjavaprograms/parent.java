@@ -11,6 +11,6 @@ public class parent {
 	}
 	public   void m2() {
 
-		System.out.println("parent method 2");
+		System.out.println("parent method 2 which is not overidden in child");
 	}
 }
