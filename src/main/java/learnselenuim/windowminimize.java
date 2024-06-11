@@ -3,7 +3,7 @@
  */
 package learnselenuim;
 
-import org.openqa.selenium.Point;
+import org.openqa.selenium.Dimension;
 
 /**
  * @author anilkumar06
@@ -16,8 +16,8 @@ public class windowminimize extends Testbase {
 	 */
 	public static void main(String[] args) {
 		
-		     Point p= new Point(-2000, 0);
-			 driver.manage().window().setPosition(p);
+ 		     Dimension d = new Dimension(100, 200);//int width, int height
+			 driver.manage().window().setSize(d);
 	}
 
 }

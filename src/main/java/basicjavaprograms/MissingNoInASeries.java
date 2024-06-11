@@ -23,7 +23,8 @@ public class MissingNoInASeries {
 
 			actualsum = actualsum + intArray[i];
 		}
-//sum the no which should be originally available in the same series
+		
+      //sum the no which should be originally available in the same series
 		for (int i = 1; i <= 10; i++) {
 
 			expectedSum = expectedSum + i;

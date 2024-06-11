@@ -1,7 +1,7 @@
 /**
  * 
  */
-package demo;
+package basicjavaprograms.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,7 +32,8 @@ public class arrayListANDLinkedList {
 		obj1.add("Automation");
 		obj1.add("Java");
 		obj1.add("Extent");
-
+		
+ 
 		System.out.println("Size of arrayList :" + obj1.size());
 		System.out.println("Items in list are :" + obj1);
 		System.out.println("last index of duplicate item Extent is " + obj1.lastIndexOf("Extent"));
@@ -86,6 +87,7 @@ public class arrayListANDLinkedList {
 		Collections.sort(obj1); // to first sort items
 		Collections.reverse((obj1)); // than just reverse the sorted
 										// collection
+		System.out.println("Descending ordered Items in list are :" + obj1);
 
 		List<Integer> xlist = new ArrayList<>();
 
@@ -97,8 +99,6 @@ public class arrayListANDLinkedList {
 		 */
 		System.out.println(Collections.max(xlist));
 		System.out.println(Collections.min(xlist));
-
-		System.out.println("Descending ordered Items in list are :" + obj1);
 
 		System.out.println("Clearing the list   ");
 		obj1.clear();
@@ -128,7 +128,7 @@ public class arrayListANDLinkedList {
 
 		System.out
 				.println("--------- Adding all elements of list to ArrayList from a specified index using addAll-----");
-		al.addAll(2, list);
+		al.addAll(2, list); // merge from 2nd index
 
 		System.out.println("Updated ArrayList using index is  " + al);
 
@@ -187,7 +187,8 @@ public class arrayListANDLinkedList {
 
 		al12.addAll(arraylist2);
 		al12.trimToSize();
-
+		System.out.println("Added elements are " + arraylist2);
+		
 		System.out.println("******linked list***Add/remove operations are less expensive***");
 		LinkedList<Object> ls = new LinkedList<Object>();
 		ls.addFirst("10.190"); // add first
@@ -210,14 +211,13 @@ public class arrayListANDLinkedList {
 		size.add(90);
 		size.add(11);
 		size.add(14);
-
 		Iterator<Integer> listi = size.listIterator(2);
 		while (listi.hasNext()) {
-			System.out.println(listi.next());
+			System.out.println("Items from 2nd index are :"+ listi.next());
 		}
 
 		/*
-		 * add/get firt/last elements in linked list only.
+		 * addfirt and getlast elements in linked list only.
 		 */
 		LinkedList<Integer> firstlast = new LinkedList<Integer>();
 		firstlast.add(44);

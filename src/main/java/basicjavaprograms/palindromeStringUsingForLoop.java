@@ -1,11 +1,11 @@
 package basicjavaprograms;
 
-public class palindromeStringTest {
+public class palindromeStringUsingForLoop {
 
 	public static void main(String[] args) {
 		String s1 = "ARA";
 		String s2 = "";
-//using for loop
+         //using for loop
 		 
 	 
 		for (int i = s1.length() - 1; i >= 0; i--) {

@@ -11,14 +11,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ActionAPI {
 
 	public static void main(String[] args) {
 
-		String driverPath = System.getProperty("user.dir");
-
-		System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/drivers/chromedriver.exe");
-
+     WebDriverManager.chromedriver().setup();
+ 
 		WebDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
@@ -42,7 +42,7 @@ public class ActionAPI {
 
 		Actions act = new Actions(driver);
 		act.moveToElement(menButton).perform(); 
-	 
+	
 		
 		WebElement tshirtButton = wait
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='T-Shirts']")));

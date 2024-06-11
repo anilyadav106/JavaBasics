@@ -1,4 +1,4 @@
-package demo;
+package learnselenuim;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -34,6 +34,8 @@ public class webTables {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		
+		
 		/* go to last table */
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[text()='Group Z']")))).click();

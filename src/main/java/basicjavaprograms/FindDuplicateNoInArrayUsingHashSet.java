@@ -21,8 +21,10 @@ public class FindDuplicateNoInArrayUsingHashSet {
 
 		int[] array = { 1, 4, 5, 5, 6, 7, 7, 8, 9, 0, 9 };
 
-		Set<Integer> set = new HashSet<>();
+		Set<Integer> set = new HashSet<>( );
 
+		
+		
 		for (int i : array) {
 			// if unable to add in set , add method returns false. Only unique element are
 			// added in set
@@ -33,6 +35,8 @@ public class FindDuplicateNoInArrayUsingHashSet {
 			}
 
 		}
+		
+		System.out.println(set);
 	}
 
 }

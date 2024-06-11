@@ -32,6 +32,7 @@ public class fetchingArrayElements {
 	 
  
 		int max= hArray[0];
+		
 		ArrayList<Integer> newlist= new ArrayList<Integer>();
  
 		for (int i=0;i<hArray.length;i++){

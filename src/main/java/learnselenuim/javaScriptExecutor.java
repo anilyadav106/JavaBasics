@@ -1,4 +1,4 @@
-package demo;
+package learnselenuim;
 
 import java.util.concurrent.TimeUnit;
 

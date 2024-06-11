@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" parallel="false">
+
+    <!-- Test for sanity group ,from below 2 classes pick only sanity one-->
+    <test name="SanityTest">
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.tests.TestClass1"/>
+            <class name="com.example.tests.TestClass2"/>
+        </classes>
+    </test>
+    
+    <!-- Test for regression group ,from below 2 classes pick only regression one-->
+    <test name="RegressionTest">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.tests.TestClass1"/>
+            <class name="com.example.tests.TestClass2"/>
+        </classes>
+    </test>
+
+</suite>

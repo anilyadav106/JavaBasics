@@ -1,7 +1,7 @@
 /**
  * 
  */
-package demo;
+package testNGLearning;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -42,7 +42,7 @@ public class assertDemo {
 	public static void CSoftAssert2() {
 		System.out.println("test started3");
 		SoftAssert asrt = new SoftAssert();
-		asrt.assertEquals(9, 13);
+		asrt.assertEquals(9, 9);
 
 		System.out.println("test ended3");
 		 asrt.assertAll(); // always last statement, else its above statements

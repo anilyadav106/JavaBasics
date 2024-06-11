@@ -32,8 +32,9 @@ public class child extends parent {
 		System.out.println(p.name);
 
 		/*
-		 * child object referenced by parent type , all parent variables and parent overridden methods in child are
-		 * accessed
+		 * child object referenced by parent type , 
+		 * all parent variables and 
+		 * parent overridden methods in child are accessed
 		 */
 		System.out.println("**** up casting****");
 		parent c1 = new child();
@@ -46,7 +47,8 @@ public class child extends parent {
 		child c2 = new child();
  		parent p2 = c2; 
  		
- 		// above 2 lines are same as parent p2 = new child();
+ 		// above 2 lines are same as 
+ 		//parent p2 = new child();
  		
 		p2.m1();
 		System.out.println(p2.i);
@@ -54,7 +56,7 @@ public class child extends parent {
 		System.out.println("****calling the non-overriddenn method of parent class");
 		parent p3 = new child();
 
-		p3.m2();   // parent method will be called but if m2() would have been overriddent in child then that child m2() will be called
+		p3.m2();   // parent method will be called but if m2() would have been over-ridden in child then that child m2() will be called
 
 	}
 

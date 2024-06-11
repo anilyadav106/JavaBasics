@@ -4,11 +4,7 @@
 package basicjavaprograms;
 
 import java.util.Scanner;
-
-/**
- * @author anilkumar06
- *
- */
+ 
 public class ScannerInput {
 
 	/**
@@ -30,7 +26,7 @@ public class ScannerInput {
 		System.out.println("Enter a float");
 		b = in.nextFloat();
 		System.out.println("You entered float " + b);
-
+       in.close();
 	}
 
 }

@@ -13,9 +13,7 @@ import java.util.List;
  */
 public class CollectionClassUseFulMethods {
 
-	/**
-	 * @param args
-	 */
+	 
 	public static void main(String[] args) {
 		
 		ArrayList<Integer> src = new ArrayList<Integer>();
@@ -30,13 +28,12 @@ public class CollectionClassUseFulMethods {
 		dest.add(15);
 		dest.add(89);
 		dest.add(76);
-		dest.add(88);
-		src.add(16);
-		/*
+		dest.add(88);  // this will remain unaffected
+ 		/*
 		 * #1 copying src list to dest list  ,provided dest have atleast capacity
 		 * to absorb src
 		 */
-		Collections.copy(dest, src);
+		Collections.copy(dest, src);  
 		System.out.println("Destination list is updated :" + dest);  
 		
 		
@@ -70,6 +67,7 @@ public class CollectionClassUseFulMethods {
 		newList.add(90);
 		newList.add(11);
 		newList.add(14);
+		
 		src.addAll(newList);
 
 		System.out.println("Added more elements in src: " + src);

@@ -9,6 +9,7 @@ public class LargestValueFromIntegerArray {
 		int[] array = {11, 2, 55, 7,-99,34,-5 };
 		
 		System.out.println("**** using for loop****");
+		
 		int max = array[0];
 
 		for (int i = 0; i < array.length; i++) {

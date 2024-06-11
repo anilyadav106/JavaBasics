@@ -1,7 +1,8 @@
 /**
  * 
  */
-package OCA;
+package DateTime;
+
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -12,7 +13,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Test {
+public class DateAndTimeDemo {
 
 	public static void main(String[] args) {
 

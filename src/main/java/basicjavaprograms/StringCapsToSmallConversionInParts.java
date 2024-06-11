@@ -1,46 +1,28 @@
-/**
- * 
- */
 package basicjavaprograms;
 
-/**
- * @author anilkumar06
- *
- */
 public class StringCapsToSmallConversionInParts {
 
-	/**
-	 *W.a.P. for converting  'abcXYZ'  to 'ABCxyz'?
-	 */
-	public static void main(String[] args) {
-		convertCaps("abcXYZ");
-	}
+    public static void main(String[] args) {
 
-	
-	static void convertCaps(String str) {
+        // input string
+        String str = "ASSAabloy";
+        String str2 = "";
 
-		if (str.length() == 1) {
-
-			System.out.println("Output is " + str);
-		}
-
-		String stnew = "";
-		char[] c1 = str.toCharArray();
-
-		for (int i = 0; i <= c1.length - 4; i++) {
-
-			stnew = stnew + Character.toUpperCase(c1[i]);
-
-		}
-
-		for (int i = 3; i < c1.length ; i++) {
-
-			stnew = stnew + Character.toLowerCase(c1[i]);
-
-		}
-
-		System.out.println(stnew);
-
-	}
-
+        // Check if the string is null or empty
+        if (str == null || str.length() == 0) {
+            System.out.println("Empty or null string is passed");
+        } else {
+            // Convert uppercase to lowercase and vice versa
+            for (int i = 0; i < str.length(); i++) {
+                char ch = str.charAt(i);
+                if (Character.isUpperCase(ch)) {
+                    str2 += Character.toLowerCase(ch);  // if upper-change to lower
+                } else if (Character.isLowerCase(ch)) {
+                    str2 += Character.toUpperCase(ch); // if lower change to upper
+                }
+            }
+            // Output the result
+            System.out.println(str2);  // Expected output: bloy
+        }
+    }
 }
