@@ -19,11 +19,14 @@ public class alertsJavaScript {
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 
 		driver.findElement(By.name("proceed")).click();
-
-		// Alert alert =driver.switchTo().alert() // we can also use this to
-		// store alert interface instance and then do action
-		// on alert.
-
+		/*
+		 * we can also use below to store alert interface instance and then do action on
+		 * alert.
+		 */
+		
+		  // Alert alert =driver.switchTo().alert() 
+			
+		 
 		String alertText = driver.switchTo().alert().getText();
 		System.out.println(alertText);
 		driver.switchTo().alert().accept();

@@ -5,12 +5,12 @@ public class objectarrays {
 	public static void main(String[] args) {
 
 		Object[] intArray = new Object[3]; // type(int, string,double,
-											// char,object) ,dimension( [] or
-											// [][]) , name
+											// char,object) ,
+		                                   //dimension( [] or [][]) , name
 		// Object intArray[] = new Object[3]; // correct
 		// Object intArray [] = new Object[3]; // correct
 
-		int length = intArray.length;
+		int length = intArray.length;  // its row length i.e no of rows
 		System.out.println("length of array is :" + length);
 
 		intArray[0] = 12;

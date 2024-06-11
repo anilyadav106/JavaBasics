@@ -24,7 +24,7 @@ public class CompareArray {
 		System.out.println(Arrays.equals(str1, str2));
 
 		// give the common elements in both the arrays
-		//use hashset whereever you want to have no duplicates in result set
+		//use hashset wherever you want to have no duplicates in result set
 
 		Set<String> set = new HashSet<>();
 

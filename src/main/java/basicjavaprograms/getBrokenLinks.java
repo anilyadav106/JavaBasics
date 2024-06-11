@@ -3,7 +3,6 @@
  */
 package basicjavaprograms;
 
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
@@ -12,11 +11,11 @@ import javax.net.ssl.HttpsURLConnection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+ 
 /**
  * @author anilkumar06
  *
@@ -30,7 +29,7 @@ public class getBrokenLinks {
 		// TODO Auto-generated method stub
 		 
  
-			WebDriverManager.edgedriver() .setup();
+			WebDriverManager.edgedriver().setup();
 			WebDriver driver = new EdgeDriver();
 
 			driver.manage().window().maximize();

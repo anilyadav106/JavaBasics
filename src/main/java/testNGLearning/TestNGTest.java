@@ -1,4 +1,4 @@
-package learnselenuim;
+package testNGLearning;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

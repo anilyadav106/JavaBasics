@@ -24,8 +24,7 @@ public class EnumDemo {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+ 
 		System.out.println(Browsers.CHROME);
 		System.out.println(Browsers.EDGE);
 

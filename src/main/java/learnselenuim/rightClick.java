@@ -37,6 +37,7 @@ public class rightClick {
 		WebElement installation = wait
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[text()='Installation']")));
 
+		 
 		action.click(installation).perform();
 
 		WebElement howtosetup = wait

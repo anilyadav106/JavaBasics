@@ -1,15 +1,15 @@
 /**
  * 
  */
-package demo;
+package basicjavaprograms.constructors;
 
 /**
  * @author anilkumar06
  *
  */
-public class Parent {
+public class Parent1 {
 
-	public Parent() {
+	public Parent1() {
 
 		System.out.println("I am parent constructor");
 	}

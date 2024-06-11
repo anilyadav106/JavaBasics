@@ -49,7 +49,7 @@ public class CountDuplicateWords {
 		for( String s1: set) {
 			if(map.get(s1)>1) {
 				
-				System.out.println(s1 + " is " + map.get(s1));
+				System.out.println(s1 + " is repeating" + map.get(s1));
 			}	
 			
 		}

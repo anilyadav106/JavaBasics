@@ -13,8 +13,7 @@ public class ReverseASentence {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+ 
 		String str = "bunny studies in green field school";
 		System.out.println(str.length());
 		String strtemp = " ";

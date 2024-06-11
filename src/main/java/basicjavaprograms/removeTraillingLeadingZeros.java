@@ -56,6 +56,8 @@ public class removeTraillingLeadingZeros {
 	    return sb.toString();
 	}
 	
+	
+	// on same string , perform deleting first character till its A
 	public static	String removeLeadingCharacters(String s) {
 	    StringBuilder sb = new StringBuilder(s);
 	    while (sb.length() > 0 && sb.charAt(0) == 'a') {
@@ -66,6 +68,8 @@ public class removeTraillingLeadingZeros {
 	}
 	
 	//shortest
+	// cucumber step defination also has these regex symbols
+	// ^ start of string, $ end of string
 	
 	public static String removeTrailingChars1(String s) {
 		String s1=s.toLowerCase();

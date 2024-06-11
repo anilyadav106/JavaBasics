@@ -31,7 +31,8 @@ public class AnagramStrings {
 		else {
 		char str1Char[] = str1.toLowerCase().toCharArray();
 		char str2Char[] = str2.toLowerCase().toCharArray();
-
+		
+ 
 		Arrays.sort(str1Char);
 		Arrays.sort(str2Char);
 

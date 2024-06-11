@@ -17,8 +17,7 @@ public class BrokenLinksFinder  {
 	
 public void getBrokenLinks() { 
 
-	String driverPath = System.getProperty("user.dir");
-
+ 
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver = new ChromeDriver();
 

@@ -14,7 +14,7 @@ import java.util.Map;
 public class AddListInMap_Sapient {
 
 	/// {
-//         “batter”=
+//         "batter"
 //         [
 //             { "id"= "1001", "type"= "Regular" },
 //             { "id"= "1002", "type"= "Chocolate" }
@@ -34,16 +34,14 @@ public class AddListInMap_Sapient {
 		HashMap<String,String> batter1 = new HashMap<String,String>();
 		batter1.put("id","1001");
 		batter1.put("type","Regular");
-		
-		
+ 		
 		HashMap<String,String> batter2 = new HashMap<String,String>();
 		batter2.put("id","1002");
 		batter2.put("type","Chocolate");
 		
 		batterlist.add(batter1);
 		batterlist.add(batter2);
-
-		map.put("batter",batterlist);
+ 		map.put("batter",batterlist);
 
 		System.out.println(map);
 		    

@@ -4,16 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class javaScriptInjection {
 
 	public static void main(String[] args) {
 
-		String driverPath = System.getProperty("user.dir");
+		WebDriverManager.edgedriver().setup();
 
-		System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/drivers/chromedriver.exe");
-
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new EdgeDriver();
 		driver.get("https://w3schools.com/jsref/tryit.asp?filename=tryjsref_submit_get");
 		driver.switchTo().frame("iframeResult");
 

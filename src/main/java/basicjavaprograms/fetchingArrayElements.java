@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
 /**
  * @author anilkumar06
  * 
@@ -34,6 +32,7 @@ public class fetchingArrayElements {
 	 
  
 		int max= hArray[0];
+		
 		ArrayList<Integer> newlist= new ArrayList<Integer>();
  
 		for (int i=0;i<hArray.length;i++){

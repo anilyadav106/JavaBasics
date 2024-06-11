@@ -1,28 +1,40 @@
 package basicjavaprograms;
 
+
+
+/*Properties of Prime Numbers
+ * 
+Greater than 1:
+Prime numbers must be greater than 1. The smallest prime number is 2.
+
+Only Two Divisors:
+A prime number has exactly two distinct positive divisors: 1 and the number itself.
+
+First Prime Number:
+The first prime number is 2, which is also the only even prime number. 
+All other prime numbers are odd since any even number greater than 2 can be divided by 2.
+*/
 public class PrimeExample {
+	
+	
 	public static void main(String args[]) {
-		int i, m = 0, flag = 0;
-		int n = 24;// it is the number to be checked
-		m = n / 2;
-
-		if (n == 0 || n == 1) {
-
-			System.out.println(n + " is not prime number");
-
-		} else {
-			for (i = 2; i <= m; i++) {
-
-				if (n % i == 0) {
-					System.out.println(n + " is not prime number");
-					flag = 1;
-					break;
-				}
-			}
-			if (flag == 0) {
-				System.out.println(n + " is prime number");
-			}
-		}
-
+		
+		System.out.println(isPrime(5));
+	
 	}
+	
+	
+	public static boolean isPrime(int number) {
+        // 0 and 1 are not prime numbers
+        if (number <= 1) {
+            return false;
+        }
+        // Check from 2 to the square root of the number like 16/2, 16/3, 16/4 ------16/16
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {  // if no if divisible completely , its not a prime no
+                return false;
+            }
+        }
+        return true;
+    }
 }

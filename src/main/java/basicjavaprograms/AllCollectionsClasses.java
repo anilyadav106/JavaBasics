@@ -4,7 +4,6 @@
 package basicjavaprograms;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -45,8 +44,16 @@ public class AllCollectionsClasses {
 		list.add(8);
 		list.add(null);
 		list.add(null);
-		System.out.println(list);
+		System.out.println("list is :"+list);
+		
 		System.out.println("********LinkedList **********");
+		
+		/*
+		 * Yes, both ArrayList and LinkedList in Java maintain the insertion order of
+		 * elements. This means that elements are stored and retrieved in the order they
+		 * were added.
+		 */		
+		
 		List<String> list1 = new LinkedList<>();
 		list1.add("a");
 		list1.add("b");
@@ -85,7 +92,7 @@ public class AllCollectionsClasses {
 		System.out.println(set);
 		
 		System.out.println("********LinkedHashSet **********");
-		/* maintains insertion order while checking duplicates */
+		/* maintains insertion order while checking no duplicates also*/
 		Set<Object> set1 = new LinkedHashSet<>();
 		set1.add("anil");
 		set1.add("anil");
@@ -96,7 +103,7 @@ public class AllCollectionsClasses {
 		set1.add('c');
 		set1.add(null);
 		set1.add(null);
-		System.out.println(set1);
+		System.out.println("LinkedHashSet is:" +set1);
 		
 		System.out.println("********TreeSet **********");
 		/* sorted while checking duplicates 
@@ -109,7 +116,7 @@ public class AllCollectionsClasses {
 		set2.add("1");
 		set2.add("2");  
 	//	set2.add(null);  // it will give null pointer exception
-		System.out.println(set2);
+		System.out.println("TreeSet is " +set2);
 		
 		System.out.println("********Map **********");
 		
@@ -123,6 +130,7 @@ public class AllCollectionsClasses {
 		 */
 		Map<Object, Object> map = new HashMap<>();
 		map.put("state", "harayana");
+		map.put("state", "delhi");
 		map.put("id", 1);
 		map.put("rollno", 22);
 		map.put("section", 'A');
@@ -133,14 +141,14 @@ public class AllCollectionsClasses {
 		map.put(null, 1);
 		map.put(null, 2);
 	
-		System.out.println(map);
+		System.out.println("Map is:" +map);
 		
 	 
 	
 		/* Maintains insertion order */
 		Map<Object, Object> map1 = new LinkedHashMap<>();
 		map1.put("name", "anil");
-		map1.put("state", "harayana");
+		map1.put("state", "haryana");
 		map1.put("id", 1);
 		map1.put("rollno", 22);
 		map1.put("section", 'A');
@@ -150,7 +158,7 @@ public class AllCollectionsClasses {
 		map1.put("isMonitor", true);
 		map1.put(null, 1);
 		map1.put(null, 2);
-		System.out.println(map1);
+		System.out.println("Linked hashmap is:"+ map1);
 		
 	
 		
@@ -166,20 +174,21 @@ public class AllCollectionsClasses {
 		map2.put("classrank", 17);
 		map2.put("isMonitor", true);
 		 
-		System.out.println(map2);
+		System.out.println("TreeMap is: "+map2);
 		
 		
 		System.out.println("**** Collections class important methods****");
+		
 		Collections.shuffle(list1);
-		System.out.println(list1);
+		System.out.println("shuffled list is :" +list1);
 		
 		/* sort in natural ascedning order */
 		Collections.sort(list1);
-		System.out.println(list1);
+		System.out.println("sorted list is :"+list1);
 		
 		/* sort in descending order */
 		Collections.sort(list1,Comparator.reverseOrder());
-		System.out.println(list1);
+		System.out.println("descending list is:" +list1);
 		
 		List<Integer> list2 = new ArrayList<>();
 		list2.add(11);
@@ -198,7 +207,7 @@ public class AllCollectionsClasses {
 		 System.out.println(list2);
 		 
 			/* the no of times 8 is persent in the list2 */
-	   System.out.println( Collections.frequency(list2, 8));
+	   System.out.println( "Repeating no in the collection is:" +Collections.frequency(list2, 8));
 	 
 		 
 	}
